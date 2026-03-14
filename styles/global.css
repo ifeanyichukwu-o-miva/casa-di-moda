@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --color-primary: #cc5500;
+  --color-primary-faded: #cc55001a;
+  --color-secondary: #36454f;
+  --color-secondary-faded: #36454f1a;
+  --color-accent: #acb3a8;
+  --color-black: #210f02;
+  --color-white: #fffbf9;
+  --color-gray200: #59524d;
+  --color-gray100: #c0bfbe;
+  --color-gray50: #eaebed;
+
+  --font-family: "Poppins", "Roboto", sans-serif;
+  --font-size-h3: 24px;
+  --font-size-h4: 20px;
+  --font-size-p: 16px;
+  --font-size-sp: 14px;
+  --font-size-xsp: 12px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+body {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+.p12-regular {
+  font-size: var(--font-size-xsp);
+}
+
+.p14-regular {
+  font-size: var(--font-size-sp);
+}
+
+.p16-regular {
+  font-size: var(--font-size-p);
+}
