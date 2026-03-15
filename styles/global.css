@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 
 :root {
   --color-primary: #cc5500;
@@ -18,6 +18,11 @@
   --font-size-p: 16px;
   --font-size-sp: 14px;
   --font-size-xsp: 12px;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
 }
 
 * {
@@ -32,14 +37,41 @@ body {
   color: var(--color-black);
 }
 
-.p12-regular {
+h3,
+.h3 {
+  font-size: var(--font-size-h3);
+  line-height: 30px;
+}
+
+h4,
+.h4 {
+  font-size: var(--font-size-h4);
+  line-height: 24px;
+}
+
+.p12 {
   font-size: var(--font-size-xsp);
+  line-height: 14px;
 }
 
-.p14-regular {
+.p14 {
   font-size: var(--font-size-sp);
+  line-height: 16px;
 }
 
-.p16-regular {
+.p16 {
   font-size: var(--font-size-p);
+  line-height: 22px;
+}
+
+.regular {
+  font-weight: var(--font-weight-regular);
+}
+
+.medium {
+  font-weight: var(--font-weight-medium);
+}
+
+.semi-bold {
+  font-weight: var(--font-weight-semi-bold);
 }
