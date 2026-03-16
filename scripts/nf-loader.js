@@ -28,7 +28,7 @@ async function loadFooter() {
 
 function showActiveNavLink() {
   const path = window.location.pathname;
-  const file = String(path).split("/")[1];
+  const file = String(path).split("/").pop();
   const activePage = String(file.replace(".html", "")).toLowerCase();
 
   const allowedPages = ["", "index", "products", "news", "about"];
