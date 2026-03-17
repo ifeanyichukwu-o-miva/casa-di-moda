@@ -286,10 +286,6 @@ nav {
   border-bottom: 0.8px solid var(--color-gray50);
   background: var(--color-white);
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   position: sticky;
   top: 0px;
   left: 0px;
@@ -305,11 +301,6 @@ nav {
 .nav-container {
   width: 100%;
   max-width: 1280px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
 }
 
 nav .nav-container[data-name="mobile"] {
@@ -328,30 +319,17 @@ nav .nav-container[data-name="mobile"] {
 
 ul.nav-links {
   list-style: none;
-
-  display: flex;
-  align-items: center;
-  gap: 16px;
 }
 
 @media screen and (max-width: 768px) {
   ul.nav-links {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 16px;
   }
 }
 
 ul.nav-links li.active {
   color: var(--color-primary);
   font-weight: var(--font-weight-medium);
-}
-
-.nav-actions {
-  display: flex;
-  align-items: center;
-  gap: 8px;
 }
 
 .nav-actions button.bookings-btn {
@@ -390,43 +368,31 @@ ul.nav-links li.active {
   height: 18px;
 
   display: none;
-  align-items: center;
-  justify-content: center;
 
   border-radius: 50%;
-
-  background: var(--color-primary);
-  color: var(--color-white);
 
   position: absolute;
   top: 6px;
   right: 6px;
 }
 
-#mobile-nav-menu {
+nav #mobile-nav-menu {
   display: none;
 }
 
 @media screen and (max-width: 768px) {
-  #mobile-nav-menu {
+  nav #mobile-nav-menu {
     width: 100%;
     min-height: calc(100dvh - 80px);
 
     padding: 24px;
-
-    background: var(--color-white);
-
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
 
     position: fixed;
     top: 80px;
     left: 0px;
     z-index: 40;
   }
-  #mobile-nav-menu.show {
+  nav #mobile-nav-menu.show {
     display: flex;
     animation: rolloutMenu 0.5s ease-in-out;
   }
