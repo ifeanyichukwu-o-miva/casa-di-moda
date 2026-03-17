@@ -50,7 +50,7 @@ function loadLucideIcons() {
 }
 
 function addEventListeners() {
-  mobileNavEventListener();
+  event_mobileNavMenuBtn();
 }
 
 async function loadAllContents() {
@@ -74,7 +74,7 @@ loadAllContents();
 
 //--EVENT LISTENERS
 
-const mobileNavEventListener = () => {
+const event_mobileNavMenuBtn = () => {
   document
     .getElementById("mobile-nav-menu-btn")
     .addEventListener("click", function () {
