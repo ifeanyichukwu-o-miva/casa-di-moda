@@ -175,6 +175,45 @@ h4,
 
 /* LAYOUT */
 
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.rd-4 {
+  border-radius: 4px;
+}
+
+.rd-8 {
+  border-radius: 8px;
+}
+
+.rd-16 {
+  border-radius: 16px;
+}
+
+/* DEFAULT */
+
 main {
   width: 100dvw;
 
