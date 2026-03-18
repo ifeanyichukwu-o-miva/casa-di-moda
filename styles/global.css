@@ -259,9 +259,6 @@ main {
   max-width: 1280px;
 
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 48px;
 }
 
 .brand-logo {
@@ -364,12 +361,13 @@ ul.nav-links li.active {
 }
 
 .nav-actions button.cart-btn span {
-  width: 18px;
-  height: 18px;
+  min-width: 18px;
+
+  padding: 1px 4px;
 
   display: none;
 
-  border-radius: 50%;
+  border-radius: 9px;
 
   position: absolute;
   top: 6px;
