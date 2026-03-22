@@ -11,6 +11,23 @@ async function loadNav() {
 
       if (!navElement) return;
       document.getElementsByTagName("main")[0].before(navElement);
+
+      //--handle nav animation
+      let tl = gsap.timeline();
+      tl.from("nav", {
+        y: -100,
+        duration: 0.8,
+        opacity: 0,
+        ease: "power2.out",
+      });
+
+      tl.from(".nav-container .brand-logo, .nav-links li", {
+        y: -20,
+        duration: 0.5,
+        opacity: 0,
+        stagger: 0.2,
+        ease: "back.out(1.7)",
+      });
     })
     .catch((error) => console.error("Error loading nav:", error));
 }

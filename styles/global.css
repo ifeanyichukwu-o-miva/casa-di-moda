@@ -309,6 +309,20 @@ p,
 
 /* DEFAULT */
 
+noscript,
+.noscript {
+  width: 100%;
+  height: 90vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-gray200);
+}
+
 main {
   width: 100%;
 
