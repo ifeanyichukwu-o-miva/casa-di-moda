@@ -1,4 +1,5 @@
 import { PRODUCTS_DATA } from "./dummy-data.js";
+import { formatNumber } from "./parser.js";
 import { loadLucideIcons } from "./nf-loader.js";
 import { getCartItems, setCartItems, renderCartItemsCount } from "./cart.js";
 
@@ -68,6 +69,40 @@ function renderProductsList() {
 
   const filteredProducts = filterProducts(searchQuery);
 
+  if (!filteredProducts.length) {
+    let noItemDiv = document.createElement("div");
+    noItemDiv.classList.add(
+      "no-item-found",
+      "flex",
+      "flex-column",
+      "flex-center",
+      "gap-24",
+    );
+
+    noItemDiv.innerHTML = `
+      <i
+        data-lucide="circle-slash-2"
+        class="lucide-icon"
+        width="64px"
+        height="64px"
+        stroke-width="1.3px"
+        color="var(--color-gray100)"
+      ></i>
+
+      <div class="flex flex-column flex-center gap-8">
+        <h4 class="medium color-gray200">NO PRODUCT FOUND</h4>
+        <p class="p14 regular color-gray200">
+          Unfortunately, we could not find what you are looking for. Continue exploring our available collections.
+        </p>
+      </div>
+    `;
+
+    targetElement.appendChild(noItemDiv);
+    loadLucideIcons();
+
+    return;
+  }
+
   filteredProducts.forEach((product) => {
     const productElement = document.createElement("div");
     productElement.classList.add(
@@ -79,9 +114,9 @@ function renderProductsList() {
 
     productElement.innerHTML = `
         <div class="product-thumbnail bg-gray50 rd-16">
-            <img src="" alt="product thumbnail" />
+            <img src="${product.photo_urls[0]}" alt="product thumbnail" />
 
-            <span class="product-cat p12 regular color-secondary bg-secondary-faded rd-4">
+            <span class="product-cat p12 regular color-white rd-4">
                 ${product.category}
             </span>
         </div>
@@ -92,7 +127,7 @@ function renderProductsList() {
         </div>
 
         <div class="flex gap-16 align-center space-between">
-            <p class="p14 medium color-gray200">₦ ${product.price}</p>
+            <p class="p14 medium color-gray200">₦ ${formatNumber(product.price)}</p>
 
             <div class="flex align-center gap-4">
             <i
@@ -127,9 +162,6 @@ function renderProductsList() {
             ${product.inCart ? "Product in cart" : "Add to cart"}
         </button>
     `;
-
-    //TODO: this event listener shouldnt be here
-    //productElement.addEventListener("click", event_addToCartBtn);
 
     targetElement.appendChild(productElement);
     loadLucideIcons();

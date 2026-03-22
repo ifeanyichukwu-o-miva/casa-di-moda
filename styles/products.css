@@ -142,9 +142,10 @@ section.products-list {
   padding: 4px 8px;
 
   text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.3);
 
   position: absolute;
-  bottom: 1.6rem;
+  top: 1.6rem;
   right: 1.6rem;
 }
 

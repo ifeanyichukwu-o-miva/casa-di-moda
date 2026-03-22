@@ -23,30 +23,9 @@
           </h3>
 
           <div id="cart_items" class="flex flex-column gap-32">
-            <!--IF NOT CART ITEM-->
-            <div class="no-item-in-cart flex flex-column flex-center gap-24">
-              <i
-                data-lucide="circle-slash-2"
-                class="lucide-icon"
-                width="64px"
-                height="64px"
-                stroke-width="1.3px"
-                color="var(--color-gray100)"
-              ></i>
+            <!--IF NOT CART ITEM (dynamicaaly populated)-->
 
-              <div class="flex flex-column flex-center gap-8">
-                <h4 class="medium color-gray200">NO ITEM IN CART</h4>
-                <p class="p14 regular color-gray200">
-                  You have not added any wear or accessories to your cart yet.
-                  Click the button below to add some.
-                </p>
-                <a href="./products.html">
-                  <button class="bg-primary-faded color-primary p14 medium">
-                    Explore Collections
-                  </button>
-                </a>
-              </div>
-            </div>
+            <!--CART ITEM LIST (dynamically populated)-->
           </div>
         </section>
 
@@ -58,21 +37,21 @@
             <div class="flex align-center space-between">
               <p class="p14 regular color-gray200">Subtotal</p>
               <p class="p16 medium color-black">
-                ₦ <span id="order_subtotal">120,000</span>
+                ₦ <span id="order_subtotal">0</span>
               </p>
             </div>
 
             <div class="flex align-center space-between">
               <p class="p14 regular color-gray200">Delivery Fee</p>
               <p class="p16 medium color-black">
-                ₦ <span id="order_delivery_fee">3,500</span>
+                ₦ <span id="order_delivery_fee">0</span>
               </p>
             </div>
 
             <div class="flex align-center space-between">
               <p class="p14 regular color-gray200">Tax</p>
               <p class="p16 medium color-black">
-                - ₦ <span id="order_tax">50</span>
+                ₦ <span id="order_tax">0</span>
               </p>
             </div>
 
@@ -82,7 +61,7 @@
             <div class="flex align-center space-between">
               <p class="p16 medium color-gray200">Total</p>
               <h4 class="medium color-black">
-                ₦ <span id="order_total">120,000</span>
+                ₦ <span id="order_total">0</span>
               </h4>
             </div>
           </div>
