@@ -64,6 +64,7 @@ button.cart-pm-btn:disabled {
 
 .order-summary {
   width: 360px;
+  height: fit-content;
 
   padding: 24px;
 }
