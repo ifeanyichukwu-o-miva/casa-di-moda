@@ -113,7 +113,7 @@ function renderProductsList() {
     );
 
     productElement.innerHTML = `
-        <div class="product-thumbnail bg-gray50 rd-16">
+        <div class="product-thumbnail bg-gray50 rd-16" onclick="event_openProductModal(event)" data-pid="${product.id}">
             <img src="${product.photo_urls[0]}" alt="product thumbnail" />
 
             <span class="product-cat p12 regular color-white rd-4">
@@ -122,7 +122,7 @@ function renderProductsList() {
         </div>
 
         <div class="desc-container flex flex-column gap-2">
-            <p class="p16 medium color-secondary">${product.title}</p>
+            <p class="p16 medium color-secondary" onclick="event_openProductModal(event)" data-pid="${product.id}">${product.title}</p>
             <p class="product-desc p14 regular color-gray100">${product.desc}</p>
         </div>
 
@@ -166,6 +166,14 @@ function renderProductsList() {
     targetElement.appendChild(productElement);
     loadLucideIcons();
   });
+}
+
+function renderActiveProductThumbnail(uri = "") {
+  const pdmPhotoActive = document.querySelector("#pdm_photo_active > img");
+
+  if (!pdmPhotoActive) return;
+
+  pdmPhotoActive.src = uri;
 }
 
 //-- EVENT LISTENERS
@@ -218,6 +226,95 @@ function event_searchProductInput(elem) {
   renderProductsList();
 }
 
+function event_closeProductModal() {
+  const productModal = document.getElementById("product_details_modal");
+  const pdmContainer = document.getElementById("pdm_container");
+
+  pdmContainer.innerHTML = "";
+  productModal.style.display = "none";
+}
+
+function event_openProductModal(elem) {
+  const pid = elem.target.getAttribute("data-pid");
+
+  const product = PRODUCTS_DATA.find((prd) => prd.id === pid);
+
+  if (!product) return;
+
+  const productModal = document.getElementById("product_details_modal");
+  const pdmContainer = document.getElementById("pdm_container");
+
+  pdmContainer.innerHTML = "";
+
+  pdmContainer.innerHTML = `
+    <div class="flex flex-column gap-8">
+      <div
+        id="pdm_photo_active"
+        class="pdm-photo-active rd-8 bg-gray50"
+      >
+        <img src="${product.photo_urls[0]}" alt="product thumbnail" />
+      </div>
+
+      <div
+        id="pdm_photo_list"
+        class="pdm-photo-list flex align-center gap-8"
+      >
+        <!--PHOTO LIST-->
+        ${product.photo_urls
+          ?.map(
+            (
+              uri,
+              index,
+            ) => `<div class="pdm-tiny-photo rd-8 bg-gray50 ${index === 0 ? "active" : ""}" onclick="event_selectActivePhoto(event)">
+            <img src="${uri}" alt="product thumbnail" />
+          </div>`,
+          )
+          .join("")}
+      </div>
+    </div>
+
+    <div class="flex flex-column gap-16">
+      <h4 class="semibold color-black">${product.title}</h4>
+
+      <div class="flex gap-16 align-center space-between">
+        <p class="p16 medium color-gray200">₦ ${formatNumber(product.price)}</p>
+
+        <div class="flex align-center gap-4">
+          <i
+            data-lucide="star"
+            class="lucide-icon"
+            color="var(--color-primary)"
+            fill="var(--color-primary)"
+          ></i>
+
+          <p class="p16 medium color-gray200">
+            ${product.rating}
+            <span class="p14 regular color-gray100">(${product.review_count} Reviews)</span>
+          </p>
+        </div>
+      </div>
+
+      <p class="product-desc p14 regular color-gray200">${product.desc}</p>
+    </div>
+  `;
+
+  productModal.style.display = "flex";
+  loadLucideIcons();
+}
+
+function event_selectActivePhoto(elem) {
+  const pdmTinyPhotos = document.querySelectorAll(".pdm-tiny-photo");
+
+  pdmTinyPhotos.forEach((photo) => {
+    photo.classList.remove("active");
+  });
+
+  elem.target.classList.add("active");
+
+  const uri = elem.target.querySelector("img").src;
+  renderActiveProductThumbnail(uri);
+}
+
 function main() {
   renderProductCategories();
   renderProductsList();
@@ -225,4 +322,7 @@ function main() {
 
 window.event_addToCartBtn = event_addToCartBtn;
 window.event_searchProductInput = event_searchProductInput;
+window.event_closeProductModal = event_closeProductModal;
+window.event_openProductModal = event_openProductModal;
+window.event_selectActivePhoto = event_selectActivePhoto;
 window.addEventListener("load", main);

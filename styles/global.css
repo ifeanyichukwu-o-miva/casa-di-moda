@@ -38,7 +38,26 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+
   font-family: var(--font-family);
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-gray100) var(--color-gray50);
+}
+
+*::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+  background: var(--color-gray50);
+  border-radius: 8px;
+}
+*::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-gray100);
+  border-radius: 8px;
+}
+*::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--color-secondary);
 }
 
 html {

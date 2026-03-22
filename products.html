@@ -86,6 +86,30 @@
         <!--PRODUCTS-->
         <section id="products_list" class="products-list flex gap-24"></section>
 
+        <!--PRODUCT DETAILS MODAL-->
+        <div
+          id="product_details_modal"
+          class="flex flex-column flex-center gap-16"
+        >
+          <div
+            id="pdm_container"
+            class="pdm-container flex flex-column gap-24 bg-white rd-8"
+          ></div>
+
+          <button
+            class="pdm-close-btn flex flex-center bg-white rd-8 p14 medium color-primary"
+            onclick="event_closeProductModal()"
+          >
+            <i
+              data-lucide="x"
+              class="lucide-icon"
+              color="var(--color-primary)"
+            ></i>
+
+            Close
+          </button>
+        </div>
+
         <!-- End of body container -->
       </div>
     </main>

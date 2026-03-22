@@ -133,6 +133,11 @@ section.products-list {
   overflow: hidden;
 
   position: relative;
+  cursor: pointer;
+}
+
+div.product-thumbnail img {
+  pointer-events: none;
 }
 
 .product-card > div.product-thumbnail span.product-cat {
@@ -173,4 +178,73 @@ section.products-list {
 .product-card > button.add-to-cart-btn:disabled > i,
 .product-card > button.add-to-cart-btn:disabled > svg {
   display: none;
+}
+
+#product_details_modal {
+  width: 100dvw;
+  height: 100dvh;
+
+  padding: 24px;
+
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+}
+
+.pdm-close-btn {
+  height: 38px;
+
+  padding: 0 16px;
+}
+
+.pdm-container {
+  width: 100%;
+  max-width: 540px;
+
+  height: 100%;
+  /* max-height: calc(100% - 102px); */
+  overflow: auto;
+
+  padding: 24px;
+}
+
+.pdm-photo-active {
+  width: 100%;
+  aspect-ratio: 1/0.8;
+
+  overflow: hidden;
+}
+
+.pdm-photo-active img {
+  object-fit: contain;
+}
+
+.pdm-photo-list {
+  width: 100%;
+
+  padding-bottom: 0.8rem;
+
+  overflow-x: auto;
+}
+
+.pdm-tiny-photo {
+  min-width: 84px;
+  width: 84px;
+  height: 84px;
+
+  overflow: hidden;
+
+  cursor: pointer;
+}
+
+div.pdm-tiny-photo img {
+  pointer-events: none;
+}
+
+.pdm-tiny-photo.active {
+  border: 2.6px solid var(--color-primary);
 }
