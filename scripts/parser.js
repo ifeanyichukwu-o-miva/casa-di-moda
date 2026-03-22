@@ -6,3 +6,13 @@ export function parseStringToHTML(str, tag = "div") {
 
   return htmlElement;
 }
+
+export function formatNumber(amount, minDecimal = 0) {
+  const formatter = new Intl.NumberFormat("en-NG", {
+    style: "decimal",
+    minimumFractionDigits: minDecimal,
+    maximumFractionDigits: 2,
+  });
+
+  return formatter.format(amount);
+}

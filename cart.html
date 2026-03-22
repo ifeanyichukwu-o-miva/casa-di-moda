@@ -9,11 +9,78 @@
 
     <!--STYLES-->
     <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/cart.css" />
   </head>
   <body>
-    <main>
-      <div class="body-container">
+    <main class="bg-gray50">
+      <div class="body-container flex-row gap-24">
         <!-- Content goes here -->
+
+        <!--CART LIST-->
+        <section class="cart-list bg-white flex flex-column gap-32 rd-8">
+          <h3 class="semibold color-black">
+            My Cart (<span id="cart_items_count"></span>)
+          </h3>
+
+          <div id="cart_items" class="flex flex-column gap-32">
+            <!--IF NOT CART ITEM (dynamicaaly populated)-->
+
+            <!--CART ITEM LIST (dynamically populated)-->
+          </div>
+        </section>
+
+        <!--ORDER SUMMARY-->
+        <section class="order-summary bg-white flex flex-column gap-32 rd-8">
+          <h3 class="semibold color-black">Order Summary</h3>
+
+          <div class="flex flex-column gap-8">
+            <div class="flex align-center space-between">
+              <p class="p14 regular color-gray200">Subtotal</p>
+              <p class="p16 medium color-black">
+                ₦ <span id="order_subtotal">0</span>
+              </p>
+            </div>
+
+            <div class="flex align-center space-between">
+              <p class="p14 regular color-gray200">Delivery Fee</p>
+              <p class="p16 medium color-black">
+                ₦ <span id="order_delivery_fee">0</span>
+              </p>
+            </div>
+
+            <div class="flex align-center space-between">
+              <p class="p14 regular color-gray200">Tax</p>
+              <p class="p16 medium color-black">
+                ₦ <span id="order_tax">0</span>
+              </p>
+            </div>
+
+            <div class="seperator"></div>
+
+            <!--TOTAL-->
+            <div class="flex align-center space-between">
+              <p class="p16 medium color-gray200">Total</p>
+              <h4 class="medium color-black">
+                ₦ <span id="order_total">0</span>
+              </h4>
+            </div>
+          </div>
+
+          <button
+            id="checkout_btn"
+            class="bg-primary color-white p14 medium flex flex-center gap-8 rd-8"
+          >
+            Proceed to Checkout
+            <i
+              data-lucide="arrow-right"
+              class="lucide-icon"
+              width="24"
+              height="24"
+              stroke-width="1.3px"
+              color="var(--color-white)"
+            ></i>
+          </button>
+        </section>
 
         <!-- End of body container -->
       </div>
@@ -22,5 +89,6 @@
     <!--SCRIPTS-->
     <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module" src="./scripts/nf-loader.js"></script>
+    <script type="module" src="./scripts/cart.js"></script>
   </body>
 </html>

@@ -1,4 +1,5 @@
 import { parseStringToHTML } from "./parser.js";
+import { renderCartItemsCount } from "./cart.js";
 
 //--LOADERS
 
@@ -45,7 +46,7 @@ function showActiveNavLink() {
   });
 }
 
-function loadLucideIcons() {
+export function loadLucideIcons() {
   lucide.createIcons();
 }
 
@@ -59,6 +60,7 @@ async function loadAllContents() {
       console.log("All contents loaded successfully.");
       showActiveNavLink();
       loadLucideIcons();
+      renderCartItemsCount();
 
       //--
       addEventListeners();
