@@ -39,7 +39,7 @@
   width: calc(100% - 2.4rem - 24px);
 }
 
-.cart-details .cart-info h3 {
+.cart-details .cart-info p {
   width: 100%;
   text-overflow: ellipsis;
   overflow: hidden;
