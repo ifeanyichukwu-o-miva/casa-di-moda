@@ -121,11 +121,11 @@ function renderCartItems() {
         <img src="${product.photo_urls[0]}" alt="product thumbnail" />
       </div>
 
-      <div class="cart-details flex flex-column space-between">
-        <div class="flex space-between gap-24">
-          <div class="cart-info flex flex-column gap-4">
-            <h4 class="medium color-secondary">${product.title}</h4>
-            <p class="p14 regular color-gray200">${product.category}</p>
+      <div class="cart-details flex flex-column gap-16 space-between">
+        <div class="flex space-between gap-16">
+          <div class="cart-info flex flex-column gap-2">
+            <h3 class="medium color-secondary">${product.title}</h3>
+            <p class="p14 regular color-gray100">${product.category}</p>
           </div>
 
           <button data-pid="${id}" class="cart-delete-btn flex flex-center" onclick="event_cartDeleteBtn(event)">
