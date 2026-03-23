@@ -124,7 +124,7 @@ function renderCartItems() {
       <div class="cart-details flex flex-column gap-16 space-between">
         <div class="flex space-between gap-16">
           <div class="cart-info flex flex-column gap-2">
-            <h3 class="medium color-secondary">${product.title}</h3>
+            <p class="p16 medium color-secondary">${product.title}</p>
             <p class="p14 regular color-gray100">${product.category}</p>
           </div>
 
