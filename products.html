@@ -9,18 +9,122 @@
 
     <!--STYLES-->
     <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/products.css" />
   </head>
   <body>
     <main>
-      <div class="body-container">
+      <div class="body-container flex-column gap-24">
         <!-- Content goes here -->
+        <section
+          class="search-box flex flex-column flex-center gap-48 rd-16 bg-secondary"
+        >
+          <div class="search-heading flex flex-column flex-center gap-8">
+            <h3 class="semibold color-white">Our Exclusive Collections</h3>
+            <p class="text-center p14 regular color-gray50">
+              Discover a curated selection of fashion-forward pieces designed to
+              blend timeless elegance with modern trends, crafted with premium
+              materials to ensure comfort, confidence, and effortless style for
+              every occasion.
+            </p>
+          </div>
+
+          <div class="search-container flex flex-column gap-8">
+            <!--SEARCH INPUT-->
+            <div class="search-bar flex align-center gap-16 rd-8 bg-white">
+              <i
+                data-lucide="search"
+                class="lucide-icon"
+                width="24"
+                height="24"
+                stroke-width="1.3px"
+                color="var(--color-gray100)"
+              ></i>
+
+              <input
+                type="search"
+                name="search"
+                id="search_input"
+                class="search-inp p16 regular color-gray200"
+                placeholder="Search for product"
+                oninput="event_searchProductInput(event)"
+              />
+
+              <div class="seperator bg-gray50"></div>
+
+              <button
+                id="search_btn"
+                class="search-btn flex flex-center"
+                onclick="event_searchProductInput(event)"
+              >
+                <i
+                  data-lucide="arrow-right"
+                  class="lucide-icon"
+                  width="24"
+                  height="24"
+                  stroke-width="1.3px"
+                  color="var(--color-gray100)"
+                ></i>
+              </button>
+            </div>
+
+            <p id="search_result_p" class="p14 regular color-gray50">
+              Showing results for:
+              <span
+                id="search_result_span"
+                class="p16 medium color-white"
+              ></span>
+            </p>
+          </div>
+        </section>
+
+        <!--CATEGORIES-->
+        <section
+          id="product_categories"
+          class="product-categories flex flex-center gap-16"
+        ></section>
+
+        <!--PRODUCTS-->
+        <section id="products_list" class="products-list flex gap-24"></section>
+
+        <!--PRODUCT DETAILS MODAL-->
+        <div
+          id="product_details_modal"
+          class="flex flex-column flex-center gap-16"
+        >
+          <div
+            id="pdm_container"
+            class="pdm-container flex flex-column gap-24 bg-white rd-8"
+          ></div>
+
+          <button
+            class="pdm-close-btn flex flex-center bg-white rd-8 p14 medium color-primary"
+            onclick="event_closeProductModal()"
+          >
+            <i
+              data-lucide="x"
+              class="lucide-icon"
+              color="var(--color-primary)"
+            ></i>
+
+            Close
+          </button>
+        </div>
 
         <!-- End of body container -->
       </div>
     </main>
 
     <!--SCRIPTS-->
+    <noscript class="noscript">This page requires JavaScript.</noscript>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module" src="./scripts/nf-loader.js"></script>
+    <script type="module" src="./scripts/products.js"></script>
+    <script type="module" src="./scripts/cart.js"></script>
   </body>
 </html>
