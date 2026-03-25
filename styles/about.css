@@ -1,0 +1,99 @@
+section.about-us {
+  height: 540px;
+  overflow: hidden;
+
+  padding: 16px;
+
+  justify-content: flex-end;
+}
+
+section.about-us > div {
+  width: 100%;
+  max-width: 920px;
+
+  padding: 16px;
+
+  text-align: center;
+}
+
+section.mv {
+  padding: 16px;
+}
+
+.mission,
+.vision {
+  width: 100%;
+  padding: 10px;
+}
+
+.vision {
+  text-align: right;
+}
+
+.mission > div:nth-child(1),
+.vision > div:nth-child(2) {
+  width: 100%;
+  max-width: 450px;
+}
+
+.mv-photo {
+  width: 100%;
+  max-width: 480px;
+  height: 240px;
+
+  overflow: hidden;
+}
+
+section.contact > form {
+  width: 100%;
+  max-width: 720px;
+
+  padding: 24px;
+}
+
+section.contact > form > div:nth-child(2) {
+  width: 100%;
+  align-items: flex-end;
+}
+
+section.contact > form button {
+  width: 320px;
+}
+
+section.contact > form input,
+section.contact > form textarea {
+  width: 100%;
+  background: var(--color-gray50);
+
+  border-radius: 0.8rem;
+
+  font-size: var(--font-size-p);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-black);
+}
+
+section.contact > form input::placeholder,
+section.contact > form textarea::placeholder {
+  color: var(--color-gray200);
+}
+
+section.contact > form input {
+  height: 48px;
+
+  padding: 0px 16px;
+}
+
+section.contact > form textarea {
+  height: 150px;
+
+  padding: 16px;
+  resize: none;
+}
+
+section.contact > form .form-split {
+  width: 100%;
+}
+
+section.contact > form .form-split > input {
+  flex: 1;
+}

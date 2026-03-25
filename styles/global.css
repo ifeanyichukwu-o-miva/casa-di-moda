@@ -75,8 +75,9 @@ a {
   color: inherit;
 }
 
+button,
 input,
-button {
+textarea {
   background: transparent;
   outline: none;
   border: none;
@@ -309,6 +310,10 @@ p,
 
 .rd-16 {
   border-radius: 1.6rem;
+}
+
+.rd-24 {
+  border-radius: 2.4rem;
 }
 
 .text-center {
