@@ -7,324 +7,297 @@
 
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
 
-
     <!--STYLES-->
     <link rel="stylesheet" href="./styles/global.css" />
-
-    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/home.css" />
   </head>
   <body>
     <main>
-      <div class="body-container">
+      <div class="body-container flex flex-column gap-48">
         <!-- Content goes here -->
 
-        <section class="hero">
+        <section
+          class="hero flex align-center space-between gap-48 bg-primary-faded rd-16"
+        >
+          <div class="flex flex-column gap-24">
+            <h3 class="color-secondary">
+              Wear the <span class="color-primary">Confidence</span>. Own the
+              <span class="color-primary">Moment</span>.
+              <br />
+              New <span class="color-primary">Season</span>. New
+              <span class="color-primary">Energy</span>. New
+              <span class="color-primary">You</span>.
+            </h3>
 
-          <div class="hero-left">
-            <h3>
-              Wear the <span>Confidence</span>. Own the <span>Moment</span>. <br>
-              New <span>Season</span>. New <span>Energy</span>. New <span>You</span>.
-           </h3>
-
-           <p>Curated fashion for work, weekends, and everything between. Designed for comfort. Built for presence. Step out looking unforgettable. Dress sharp without trying hard. Because great style should feel natural.</p>
-
-           <div class="hero-buttons flex gap-24">
-
-            <button class="light">See What's Trending</button>
-            <button class="dark">Explore Our Collections 🡢</button>
-
-            </div>
-         </div>
-
-              <img src="./assets/ece298d0ec2c16f10310d45724b276a6035cb503.png" alt="image"/>
-        </section>
-
-
-        <section class="products flex flex-column align-center">
-
-            <div class="products-header">
-
-            <p class="title">OUR COLLECTIONS</p>
-
-            <h3>
-              Styles Crafted Just For You. <br>
-              Explore For Your Next Favorite Outfit.
-              </h3>
-
-            <p class="description">
-              Browse our collection of premium fashion wears and accessories made for every ocassions. Find outfits that match your vibe, express your personality, and help you standout effortlessly.
+            <p class="p16 regular color-gray200">
+              Curated fashion for work, weekends, and everything between.
+              Designed for comfort. Built for presence. Step out looking
+              unforgettable. Dress sharp without trying hard. Because great
+              style should feel natural.
             </p>
 
-          </div>
+            <div class="hero-buttons flex gap-24">
+              <button class="light p14 medium rd-8 color-primary">
+                See What's Trending
+              </button>
 
-          <div class="products-categories">
-
-            <button>Unisex</button>
-
-            <button>Women</button>
-
-            <button>Men</button>
-
-            <button>Accessories</button>
-          </div>
-
-          <div class="products-card">
-
-          </div>
-
-            <button class="view-more">View More Collections</button>
-          
-        </section>
-
-
-        <section class="achievements">
-
-          <div class="achievements-header">
-
-            <p class="title">OUR ACHIEVEMENTS</p>
-
-            <h3>Milestones We're Proud Of.<br>Built on Style. Backed by Numbers.</h3>
-
-            <p class="description">Numbers that reflect our journey, growth, and the trust our community places in us. A growing legacy shaped by creativity, consistency, and customer love.</p>
-
-          </div>
-
-          <div class="stats-card">
-
-            <div class="stat-card1">
-
-              <div class="statcard-header">
-                <i data-lucide="users"
-                class="lucide-icon"
-                color="var(--color-white)"
+              <button
+                class="p14 medium rd-8 bg-primary color-white flex flex-center gap-8"
+              >
+                Explore Our Collections
+                <i
+                  data-lucide="arrow-right"
+                  class="lucide-icon"
+                  color="var(--color-white)"
                 ></i>
-
-                <span>7,024</span>
-
-              </div>
-
-              <h3>Happy & Loyal Customers</h3>
-
-              <p>A strong and growing family of satisfied fashion lovers worldwide.</p>
-              
+              </button>
             </div>
+          </div>
 
-            <div class="stat-card2">
-
-              <div class="statcard-header">
-
-                <i data-lucide="Shirt"
-                class="lucide-icon"
-                color="var(--color-secondary)"
-                ></i>
-
-                <span>392+</span>
-
-              </div>
-
-              <h3>Signature Wears Released</h3>
-
-              <p>Exclusive collections crafted to keep your wardrobe fresh and timeless.</p>
-
-            </div>
-
-            <div class="stat-card3">
-
-              <div class="statcard-header">
-
-                <i data-lucide="globe"
-                class="lucide-icon"
-                color="var(--color-white)"
-                ></i>
-
-                <span>85</span>
-              
-              </div>
-
-              <h3>Countries Reached</h3>
-
-              <p>Delivering premium fashion experiences across the globe.</p>
-
-            </div>
+          <div class="hero-photo">
+            <img src="" alt="Hero Photo" />
           </div>
         </section>
 
+        <section class="flex flex-column align-center gap-32">
+          <div class="section-header flex flex-column align-center gap-12">
+            <p class="p14 medium color-primary">OUR COLLECTIONS</p>
 
-        <section class="news">
+            <h3 class="semibold color-secondary">
+              Styles Crafted Just For You. <br />
+              Explore For Your Next Favorite Outfit.
+            </h3>
 
-
-          <div class="news-header">
-
-            <div class="news-header-text1">
-
-              <h3>
-                Latest News & Event Updates <br> From Our Fashion World To Yours
-              </h3>
-
-            </div>
-            <div class="news-header-text2">
-              <p>
-                Stay inspired with the latest trends, style tips, and updates from our brand.
-              </p>
-              <p>
-                Discover stories, insights, and fashion themed events to keep you ahead in style.
-              </p>
-
-              <button class="explore-btn">Explore Articles <span>→</span></button>
-            </div>
-
+            <p class="p14 regular color-gray200">
+              Browse our collection of premium fashion wears and accessories
+              made for every ocassions. Find outfits that match your vibe,
+              express your personality, and help you standout effortlessly.
+            </p>
           </div>
 
-          
-          <div class="news-container">
+          <div class="products-categories"></div>
 
-            
-            <div class="news-card-big">
-              <img src="./assets/ece298d0ec2c16f10310d45724b276a6035cb503.png" alt="news">
+          <div class="products-card"></div>
 
-              <div class="overlay">
-                <p class="tag">WOMENS NEWS</p>
-                <h4>
+          <a href="./products.html"
+            ><button
+              class="view-more-btn bg-secondary rd-8 p14 medium color-white flex flex-center"
+            >
+              View More Collections
+              <i
+                data-lucide="arrow-up-right"
+                class="lucide-icon"
+                color="var(--color-white)"
+              ></i></button
+          ></a>
+        </section>
+
+        <section class="flex flex-column align-center gap-32">
+          <div class="section-header flex flex-column align-center gap-12">
+            <p class="p14 medium color-primary">OUR ACHIEVEMENTS</p>
+
+            <h3 class="semibold color-secondary">
+              Milestones We're Proud Of.<br />Built on Style. Backed by Numbers.
+            </h3>
+
+            <p class="p14 regular color-gray200">
+              Numbers that reflect our journey, growth, and the trust our
+              community places in us. A growing legacy shaped by creativity,
+              consistency, and customer love.
+            </p>
+          </div>
+
+          <div class="achievements flex flex-center">
+            <div class="stat-card flex flex-column gap-10 bg-secondary">
+              <div class="flex align-center gap-8">
+                <i
+                  data-lucide="users"
+                  class="lucide-icon"
+                  color="var(--color-white)"
+                  stroke-weight="2.3px"
+                ></i>
+
+                <h3 class="semibold color-white">7,024</h3>
+              </div>
+
+              <p class="p16 medium color-white">Happy & Loyal Customers</p>
+
+              <p class="p14 regular color-gray100">
+                A strong and growing family of satisfied fashion lovers
+                worldwide.
+              </p>
+            </div>
+
+            <div class="stat-card flex flex-column gap-10">
+              <div class="flex align-center gap-8">
+                <i
+                  data-lucide="users"
+                  class="lucide-icon"
+                  color="var(--color-secondary)"
+                  stroke-weight="2.3px"
+                ></i>
+
+                <h3 class="semibold color-secondary">392+</h3>
+              </div>
+
+              <p class="p16 medium color-secondary">Signature Wears Released</p>
+
+              <p class="p14 regular color-gray200">
+                Exclusive collections crafted to keep your wardrobe fresh and
+                timeless.
+              </p>
+            </div>
+
+            <div class="stat-card flex flex-column gap-10 bg-secondary">
+              <div class="flex align-center gap-8">
+                <i
+                  data-lucide="users"
+                  class="lucide-icon"
+                  color="var(--color-white)"
+                  stroke-weight="2.3px"
+                ></i>
+
+                <h3 class="semibold color-white">85</h3>
+              </div>
+
+              <p class="p16 medium color-white">Countries Reached</p>
+
+              <p class="p14 regular color-gray100">
+                Delivering premium fashion experiences across the globe.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="news-section flex flex-column gap-32">
+          <div class="flex align-center space-between gap-10">
+            <h3 class="semibold color-black">
+              Latest News & Event Updates <br />
+              From Our Fashion World To Yours
+            </h3>
+
+            <div class="nw-desc flex flex-column gap-16">
+              <p class="p14 regular color-gray200">
+                Stay inspired with the latest trends, style tips, and updates
+                from our brand. Discover stories, insights, and fashion themed
+                events to keep you ahead in style.
+              </p>
+
+              <a href="./news.html"
+                ><button
+                  class="p14 medium color-primary flex flex-center gap-8"
+                >
+                  Explore Articles
+                  <i
+                    data-lucide="arrow-right"
+                    class="lucide-icon"
+                    color="var(--color-primary)"
+                  ></i></button
+              ></a>
+            </div>
+          </div>
+
+          <div class="news-container flex align-center gap-24">
+            <div class="news-card big rd-16">
+              <div class="news-thumbnail bg-gray50">
+                <img src="" alt="News thumbnail" />
+              </div>
+
+              <div class="overlay bg-accent flex flex-column gap-8">
+                <p class="p12 regular color-white">WOMENS NEWS</p>
+                <h4 class="medium color-white">
                   Wrap Yourself In Elegance With The Aurora Luxe Sophistication
                 </h4>
               </div>
             </div>
 
-            <div class="news-card-small">
-              <img src="./assets/ece298d0ec2c16f10310d45724b276a6035cb503.png" alt="news">
-              <div class="overlay">
-                <p class="tag">WOMENS NEWS</p>
-                <h4>Wrap Yourself In Elegance With The Aurora Luxe Sophistication</h4>
+            <div class="news-card small rd-16">
+              <div class="news-thumbnail bg-gray50">
+                <img src="" alt="News thumbnail" />
+              </div>
+
+              <div class="overlay bg-accent flex flex-column gap-8">
+                <p class="p12 regular color-white">WOMENS NEWS</p>
+                <h4 class="medium color-white">
+                  Wrap Yourself In Elegance With The Aurora Luxe Sophistication
+                </h4>
               </div>
             </div>
-
           </div>
-
         </section>
 
+        <section
+          class="testimonials flex flex-column align-center gap-32 bg-secondary rd-16"
+        >
+          <div class="section-header flex flex-column align-center gap-12">
+            <p class="tes-header bg-white rd-4 p14 medium color-primary">
+              TESTIMONIALS
+            </p>
 
-
-        <section class="testimonials">
-
-            <div class="testimonials-header">
-            <span class="badge">TESTIMONIALS</span>
-
-            <h3>
-              Positive Reviews and Ratings.<br>
+            <h3 class="semibold color-white">
+              Positive Reviews and Ratings.<br />
               Signs Of Great Experiences And Satisfactions.
             </h3>
 
-            <p>
-              Hear what our esteemed customers have to say about our exclusive wears
-              and accessories. Our mission has always been to deliver exceptional
-              services through fashion.
+            <p class="p14 regular color-gray100">
+              Hear what our esteemed customers have to say about our exclusive
+              wears and accessories. Our mission has always been to deliver
+              exceptional services through fashion.
             </p>
           </div>
 
-          <div class="testimonials-container flex gap-24 flex-center">
+          <div class="flex flex-column gap-8">
+            <div class="testimonials-container flex gap-24">
+              <!--TESTIMONIALS (dynamically populated)-->
+              <div
+                class="testimonial-card flex flex-column gap-32 bg-white rd-16"
+              >
+                <div class="flex align-center space-between gap-24">
+                  <div class="tc-user flex align-center gap-8">
+                    <div class="tc-avatar bg-gray50">
+                      <img src="" alt="User avatar" />
+                    </div>
 
-            
-            <div class="card">
+                    <div class="flex flex-column gap-4">
+                      <p class="p16 medium color-black">Fullname of User</p>
 
-              <div class="card-top">
-
-                <div class="user">
-
-                  <div class="avatar"><img src="assets/ece298d0ec2c16f10310d45724b276a6035cb503.png" alt=""></div>
-
-                  <div>
-                    <p>Fullname of User</p>
-
-                    <span>user_name</span>
-
+                      <p class="p14 regular color-gray200">user_name</p>
+                    </div>
                   </div>
 
-                </div>
-
-                <div class="quote">”</div>
-
-              </div>
-
-              <p class="review">
-                This would be the bunch of text to serve as the actual user testimonies.
-              </p>
-
-              <div class="stars">★★★★★</div>
-
-            </div>
-
-          
-            <div class="card">
-
-              <div class="card-top">
-
-                <div class="user">
-
-                  <div class="avatar"><img src="assets/ece298d0ec2c16f10310d45724b276a6035cb503.png" alt=""></div>
-
-                  <div>
-                    <p>Fullname of User</p>
-
-                    <span>user_name</span>
-
+                  <div class="tc-quote flex flex-center">
+                    <i
+                      data-lucide="qoute"
+                      class="lucide-icon"
+                      color="var(--color-gray100)"
+                    ></i>
                   </div>
-
                 </div>
 
-                <div class="quote">”</div>
+                <div class="flex flex-column gap-8">
+                  <h4 class="medium color-secondary">
+                    This would be the bunch of text to serve as the actual user
+                    testimonies.
+                  </h4>
 
-              </div>
-
-              <p class="review">
-                This would be the bunch of text to serve as the actual user testimonies.
-              </p>
-
-              <div class="stars">★★★★☆</div>
-
-            </div>
-
-            
-            <div class="card">
-
-              <div class="card-top">
-
-                <div class="user">
-
-                  <div class="avatar"><img src="assets/ece298d0ec2c16f10310d45724b276a6035cb503.png" alt=""></div>
-
-                  <div>
-                    <p>Fullname of User</p>
-
-                    <span>user_name</span>
+                  <div class="flex align-center gap-4">
+                    <i
+                      data-lucide="star"
+                      class="lucide-icon"
+                      color="var(--color-primary)"
+                    ></i>
                   </div>
-
                 </div>
-
-                <div class="quote">”</div>
-
               </div>
-
-              <p class="review">
-                This would be the bunch of text to serve as the actual user testimonies.
-              </p>
-
-              <div class="stars">★★★★☆</div>
-
             </div>
 
+            <div class="tc-indicator flex flex-center gap-10">
+              <span></span>
+              <span class="active"></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
-
-    
-          <div class="dots">
-            <span></span>
-            <span class="active"></span>
-            <span></span>
-            <span></span>
-          </div>
-
-
-          
-
         </section>
         <!-- End of body container -->
       </div>
