@@ -140,3 +140,7 @@ export const PRODUCTS_DATA = [
     review_count: 98,
   },
 ];
+
+export const NEWS_DATA = [];
+
+export const TESTIMONIALS_DATA = [];

@@ -275,6 +275,14 @@ p,
   gap: 0.8rem;
 }
 
+.gap-10 {
+  gap: 1rem;
+}
+
+.gap-12 {
+  gap: 1.2rem;
+}
+
 .gap-16 {
   gap: 1.6rem;
 }
@@ -333,9 +341,22 @@ main {
   align-items: center;
 }
 
+section {
+  width: 100%;
+}
+
+section > div.section-header {
+  text-align: center;
+  max-width: 640px;
+}
+
 @media screen and (max-width: 768px) {
   main {
     padding: 16px;
+  }
+
+  section > div.section-header {
+    max-width: 100dvw;
   }
 }
 

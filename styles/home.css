@@ -1,0 +1,286 @@
+.hero {
+  padding: 24px 24px 24px 48px;
+}
+
+.hero > div {
+  width: calc((100% - 4.8rem) / 2);
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 16px;
+
+    flex-wrap: wrap-reverse;
+  }
+
+  .hero > div {
+    width: 100%;
+  }
+}
+
+.hero-buttons button {
+  width: calc((100% - 2.4rem) / 2);
+}
+
+@media screen and (max-width: 768px) {
+  .hero-buttons {
+    flex-wrap: wrap-reverse;
+    gap: 16px;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+  }
+}
+
+.hero-buttons button.light {
+  border: 1px solid var(--color-primary);
+}
+
+.hero-photo {
+  height: 320px;
+  overflow: hidden;
+}
+
+.products-card {
+  width: 100%;
+  min-height: 480px;
+  color: var(--color-black);
+}
+
+.products-categories {
+  margin: 24px auto;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  width: fit-content;
+}
+
+button.view-more-btn {
+  width: 320px;
+}
+
+.stat-card {
+  width: 100%;
+  min-width: 320px;
+  max-width: 360px;
+
+  padding: 24px;
+
+  border: 1px solid var(--color-secondary);
+}
+
+@media screen and (max-width: 768px) {
+  .achievements {
+    flex-wrap: wrap;
+  }
+
+  .stat-card {
+    max-width: 100dvw;
+  }
+}
+
+.nw-desc {
+  max-width: 560px;
+
+  align-items: flex-end;
+  text-align: right;
+}
+
+.nw-desc button {
+  height: fit-content;
+}
+
+@media screen and (max-width: 768px) {
+  section.news-section > div:nth-child(1) {
+    flex-wrap: wrap;
+  }
+
+  .nw-desc {
+    max-width: 100dvw;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .nw-desc > a {
+    margin-left: auto;
+  }
+}
+
+.news-container {
+  width: 100%;
+
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .news-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.news-card {
+  height: 380px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.news-card.big {
+  min-width: 420px;
+  width: 840px;
+}
+
+.news-card.small {
+  min-width: 350px;
+  width: 420px;
+}
+
+@media screen and (max-width: 768px) {
+  .news-card,
+  .news-card.big,
+  .news-card.small {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
+.news-thumbnail {
+  width: 100%;
+  height: 100%;
+}
+
+.news-card .overlay {
+  width: 100%;
+
+  padding: 24px;
+
+  position: absolute;
+  bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .news-card .overlay {
+    padding: 16px;
+  }
+}
+
+.testimonials {
+  padding: 24px 16px;
+}
+
+.testimonials > div:nth-child(2) {
+  width: 100%;
+  padding: 0px 0px 0px 8px;
+}
+
+.tes-header {
+  width: fit-content;
+
+  padding: 8px 16px;
+}
+
+.testimonials-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonials-container {
+    gap: 16px;
+  }
+
+  .testimonials-container::-webkit-scrollbar {
+    display: none;
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+  }
+}
+
+.testimonial-card {
+  min-width: 360px;
+  max-width: 540px;
+
+  padding: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonial-card {
+    min-width: 90%;
+    width: 90%;
+    max-width: 90%;
+
+    gap: 16px;
+  }
+
+  .testimonial-card > div > h4 {
+    font-size: var(--font-size-p);
+    font-weight: var(--font-weight-medium);
+    line-height: 20px;
+  }
+}
+
+.tc-user {
+  flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .tc-user > div {
+    gap: 2px;
+  }
+
+  .tc-user > div > p.p16 {
+    font-size: var(--font-size-sp);
+    line-height: 18px;
+  }
+
+  .tc-user > div > p.p14 {
+    font-size: var(--font-size-xsp);
+  }
+}
+
+.tc-avatar {
+  width: 48px;
+  height: 48px;
+
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.tc-quote {
+  width: 38px;
+  height: 38px;
+
+  border-radius: 100%;
+  border: 1px solid var(--color-gray100);
+}
+
+.tc-indicator {
+  width: 100%;
+
+  padding: 10px;
+}
+
+.tc-indicator span {
+  display: inline-block;
+  width: 24px;
+  height: 4px;
+  background: var(--color-gray100);
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  .tc-indicator {
+    gap: 8px;
+  }
+
+  .tc-indicator span {
+    width: 12px;
+  }
+}
+
+.tc-indicator span.active {
+  background: var(--color-primary);
+}
