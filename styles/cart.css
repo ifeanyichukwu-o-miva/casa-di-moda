@@ -32,13 +32,14 @@
 .cart-item .cart-details {
   width: calc(100% - 120px - 1.6rem);
   height: 100%;
+  min-height: 120px;
 }
 
 .cart-details .cart-info {
   width: calc(100% - 2.4rem - 24px);
 }
 
-.cart-details .cart-info h4 {
+.cart-details .cart-info p {
   width: 100%;
   text-overflow: ellipsis;
   overflow: hidden;
