@@ -68,6 +68,43 @@ section.mv {
   }
 }
 
+.trustee-card {
+  width: 240px;
+  height: 420px;
+
+  padding: 24px;
+
+  background: #ebedee;
+  background: linear-gradient(
+    152deg,
+    rgba(235, 237, 238, 1) 50%,
+    rgba(54, 69, 79, 1) 100%
+  );
+}
+
+.trc-frame {
+  flex: 1;
+}
+
+.trc-photo {
+  flex: 1;
+  overflow: hidden;
+}
+
+.trc-socials {
+  width: 100%;
+  height: 42px;
+}
+
+.trc-socials > div {
+  flex: 1;
+  height: 100%;
+}
+
+.trc-socials > div:nth-child(even) {
+  background: var(--color-white);
+}
+
 section.contact > form {
   width: 100%;
   max-width: 720px;
