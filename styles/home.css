@@ -46,20 +46,6 @@
   overflow: hidden;
 }
 
-.products-card {
-  width: 100%;
-  min-height: 480px;
-  color: var(--color-black);
-}
-
-.products-categories {
-  margin: 24px auto;
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  width: fit-content;
-}
-
 button.view-more-btn {
   width: 320px;
 }

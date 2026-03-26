@@ -143,4 +143,85 @@ export const PRODUCTS_DATA = [
 
 export const NEWS_DATA = [];
 
-export const TESTIMONIALS_DATA = [];
+export const TESTIMONIALS_DATA = [
+  {
+    fullname: "Daniel Okafor",
+    username: "@danny_o",
+    rating: 5,
+    testimony:
+      "The jogger set is insanely comfortable and still looks sharp when I step out.",
+    photo_url: "./assets/testimonial-images",
+  },
+  {
+    fullname: "Aisha Bello",
+    username: "@aishabstyles",
+    rating: 5,
+    testimony:
+      "I love how the denim jacket fits perfectly and elevates my casual outfits.",
+    photo_url: "./assets/testimonial-images",
+  },
+  {
+    fullname: "Tunde Adeyemi",
+    username: "@tunde_codes",
+    rating: 4,
+    testimony:
+      "The hoodie and backpack combo is both stylish and super functional for daily use.",
+    photo_url: "./assets/testimonial-images",
+  },
+  {
+    fullname: "Chioma Nwoye",
+    username: "@chioma_fits",
+    rating: 5,
+    testimony:
+      "This pencil skirt gives me such a clean and confident look at work.",
+    photo_url: "./assets/testimonial-images",
+  },
+  {
+    fullname: "Ibrahim Musa",
+    username: "@ibrahimwears",
+    rating: 4,
+    testimony:
+      "The sleeveless cardigan is lightweight, classy, and perfect for layering.",
+    photo_url: "./assets/testimonial-images",
+  },
+  {
+    fullname: "Zainab Sadiq",
+    username: "@zainabstyle",
+    rating: 5,
+    testimony:
+      "The longline cardigan keeps me warm and stylish without feeling bulky.",
+    photo_url: "./assets/testimonial-images",
+  },
+  {
+    fullname: "Emeka Obi",
+    username: "@emeka_o",
+    rating: 5,
+    testimony:
+      "That military coat makes me feel powerful every time I wear it.",
+    photo_url: "./assets/testimonial-images",
+  },
+  {
+    fullname: "Sadiq Lawal",
+    username: "@lawal_s",
+    rating: 4,
+    testimony:
+      "The wristwatch looks premium and gets compliments everywhere I go.",
+    photo_url: "./assets/testimonial-images",
+  },
+  {
+    fullname: "Ngozi Eze",
+    username: "@ngozi_e",
+    rating: 5,
+    testimony:
+      "The leather laptop bag is durable, spacious, and looks incredibly elegant.",
+    photo_url: "./assets/testimonial-images",
+  },
+  {
+    fullname: "Victor James",
+    username: "@vicjames",
+    rating: 4,
+    testimony:
+      "These t-shirts are soft, well-fitted, and perfect for everyday wear.",
+    photo_url: "./assets/testimonial-images",
+  },
+];
