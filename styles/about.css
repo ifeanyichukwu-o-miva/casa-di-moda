@@ -7,6 +7,12 @@ section.about-us {
   justify-content: flex-end;
 }
 
+@media screen and (max-width: 768px) {
+  section.about-us {
+    height: 660px;
+  }
+}
+
 section.about-us > div {
   width: 100%;
   max-width: 920px;
@@ -42,6 +48,24 @@ section.mv {
   height: 240px;
 
   overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  section.mv {
+    padding: 0px;
+  }
+
+  .mission {
+    flex-wrap: wrap;
+  }
+
+  .vision {
+    flex-wrap: wrap-reverse;
+  }
+
+  .mv-photo {
+    max-width: none;
+  }
 }
 
 section.contact > form {
@@ -96,4 +120,22 @@ section.contact > form .form-split {
 
 section.contact > form .form-split > input {
   flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+  section.contact > form {
+    padding: 16px;
+  }
+
+  section.contact > form button {
+    width: 100%;
+  }
+
+  section.contact > form .form-split {
+    flex-wrap: wrap;
+  }
+
+  section.contact > form .form-split > input {
+    min-width: 100%;
+  }
 }
