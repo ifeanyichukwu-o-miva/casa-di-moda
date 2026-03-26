@@ -82,6 +82,10 @@ section.mv {
   );
 }
 
+.trustee-card h3 {
+  line-height: 20px;
+}
+
 .trc-frame {
   flex: 1;
 }
