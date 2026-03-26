@@ -18,8 +18,12 @@
   }
 }
 
+.hero-buttons a {
+  flex: 1;
+}
+
 .hero-buttons button {
-  width: calc((100% - 2.4rem) / 2);
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
