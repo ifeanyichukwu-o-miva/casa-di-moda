@@ -46,6 +46,22 @@
   overflow: hidden;
 }
 
+@media screen and (max-width: 768px) {
+  .products-list.few-list {
+    width: 100%;
+
+    justify-content: flex-start;
+
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .products-list.few-list .product-card {
+    width: 75%;
+    min-width: 75%;
+  }
+}
+
 button.view-more-btn {
   width: 320px;
 }
@@ -162,7 +178,10 @@ button.view-more-btn {
 
 .testimonials > div:nth-child(2) {
   width: 100%;
-  padding: 0px 0px 0px 8px;
+  padding: 0px 16px;
+
+  overflow: hidden;
+  position: relative;
 }
 
 .tes-header {
@@ -173,12 +192,18 @@ button.view-more-btn {
 
 .testimonials-container {
   width: 100%;
-  overflow-x: auto;
+
+  padding: 24px 0 0 48px;
+
+  transition: transform 0.5s ease;
+  will-change: transform;
 }
 
 @media screen and (max-width: 768px) {
   .testimonials-container {
     gap: 16px;
+
+    padding: 16px 0 0 16px;
   }
 
   .testimonials-container::-webkit-scrollbar {
@@ -190,10 +215,20 @@ button.view-more-btn {
 }
 
 .testimonial-card {
-  min-width: 360px;
+  min-width: 480px;
   max-width: 540px;
 
   padding: 16px;
+}
+
+.testimonial-card p.p16 {
+  text-wrap-style: stable;
+}
+
+.testimonial-card.active {
+  transform: scale(1.2);
+
+  margin: 0 48px;
 }
 
 @media screen and (max-width: 768px) {
@@ -203,6 +238,13 @@ button.view-more-btn {
     max-width: 90%;
 
     gap: 16px;
+
+    padding: 16px;
+  }
+
+  .testimonial-card.active {
+    transform: scale(1.1);
+    margin: 0 16px;
   }
 
   .testimonial-card > div > h4 {
@@ -217,13 +259,17 @@ button.view-more-btn {
 }
 
 @media screen and (max-width: 768px) {
+  .tc-user {
+    gap: 4px;
+  }
+
   .tc-user > div {
-    gap: 2px;
+    gap: 1px;
   }
 
   .tc-user > div > p.p16 {
     font-size: var(--font-size-sp);
-    line-height: 18px;
+    line-height: 16px;
   }
 
   .tc-user > div > p.p14 {
@@ -245,6 +291,18 @@ button.view-more-btn {
 
   border-radius: 100%;
   border: 1px solid var(--color-gray100);
+}
+
+@media screen and (max-width: 768px) {
+  .tc-avatar {
+    width: 36px;
+    height: 36px;
+  }
+
+  .tc-quote {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .tc-indicator {

@@ -283,57 +283,18 @@
             </p>
           </div>
 
-          <div class="flex flex-column gap-8">
-            <div class="testimonials-container flex gap-24">
+          <div class="flex flex-column gap-24">
+            <div
+              id="testimonial_list"
+              class="testimonials-container flex gap-24"
+            >
               <!--TESTIMONIALS (dynamically populated)-->
-              <div
-                class="testimonial-card flex flex-column gap-32 bg-white rd-16"
-              >
-                <div class="flex align-center space-between gap-24">
-                  <div class="tc-user flex align-center gap-8">
-                    <div class="tc-avatar bg-gray50">
-                      <img src="" alt="User avatar" />
-                    </div>
-
-                    <div class="flex flex-column gap-4">
-                      <p class="p16 medium color-black">Fullname of User</p>
-
-                      <p class="p14 regular color-gray200">user_name</p>
-                    </div>
-                  </div>
-
-                  <div class="tc-quote flex flex-center">
-                    <i
-                      data-lucide="quote"
-                      class="lucide-icon"
-                      color="var(--color-gray100)"
-                    ></i>
-                  </div>
-                </div>
-
-                <div class="flex flex-column gap-8">
-                  <h4 class="medium color-secondary">
-                    This would be the bunch of text to serve as the actual user
-                    testimonies.
-                  </h4>
-
-                  <div class="flex align-center gap-4">
-                    <i
-                      data-lucide="star"
-                      class="lucide-icon"
-                      color="var(--color-primary)"
-                    ></i>
-                  </div>
-                </div>
-              </div>
             </div>
 
-            <div class="tc-indicator flex flex-center gap-10">
-              <span></span>
-              <span class="active"></span>
-              <span></span>
-              <span></span>
-            </div>
+            <div
+              id="testimonial_indicator"
+              class="tc-indicator flex flex-center gap-10"
+            ></div>
           </div>
         </section>
         <!-- End of body container -->
@@ -352,5 +313,6 @@
     <script type="module" src="./scripts/nf-loader.js"></script>
     <script type="module" src="./scripts/products.js"></script>
     <script type="module" src="./scripts/cart.js"></script>
+    <script type="module" src="./scripts/testimonials.js"></script>
   </body>
 </html>
