@@ -178,7 +178,9 @@ function triggerTestimonialSlider() {
   centerCard(index);
 
   updateIndicators();
-  updateActiveTestimonial();
+  setTimeout(() => {
+    updateActiveTestimonial();
+  }, 100);
 
   //--reset when reaching cloned items
   if (index === TESTIMONIALS_DATA.length) {
@@ -191,7 +193,7 @@ function triggerTestimonialSlider() {
 }
 
 function startAutoSlider() {
-  interval = setInterval(triggerTestimonialSlider, 3000);
+  interval = setInterval(triggerTestimonialSlider, 5000);
 }
 
 function stopAutoSlider() {
