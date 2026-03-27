@@ -75,7 +75,7 @@ section.search-box .search-container .search-bar .seperator {
   border-radius: 4px;
 
   text-transform: uppercase;
-  font-size: var(--font-size-sp);
+  font-size: var(--font-size-xsp);
   font-weight: var(--font-weight-regular);
   color: var(--color-gray200);
 }

@@ -28,7 +28,7 @@ function renderTestimonialList() {
         <div class="flex align-center space-between gap-24">
             <div class="tc-user flex align-center gap-8">
                 <div class="tc-avatar bg-gray50">
-                    <img src="" alt="User avatar" />
+                    <img src="${testimony.photo_url}" alt="User avatar" />
                 </div>
 
                 <div class="flex flex-column gap-2">
@@ -62,7 +62,6 @@ function renderTestimonialList() {
     `;
 
     targetElement.appendChild(testimonialElement);
-    loadLucideIcons();
   });
 
   //--clone first few cards for loop effect
@@ -81,7 +80,7 @@ function renderTestimonialList() {
         <div class="flex align-center space-between gap-24">
             <div class="tc-user flex align-center gap-8">
             <div class="tc-avatar bg-gray50">
-                <img src="" alt="User avatar" />
+                <img src="${testimony.photo_url}" alt="User avatar" />
             </div>
 
             <div class="flex flex-column gap-2">
@@ -115,8 +114,8 @@ function renderTestimonialList() {
     `;
 
     targetElement.appendChild(testimonialElement);
-    loadLucideIcons();
   });
+  loadLucideIcons();
 
   targetElement.addEventListener("mouseenter", stopAutoSlider);
   targetElement.addEventListener("mouseleave", startAutoSlider);

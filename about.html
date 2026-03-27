@@ -163,52 +163,11 @@
             </p>
           </div>
 
-          <!--TODO: add brand trustees-->
-          <div class="trustess-container flex flex-center gap-24">
-            <div class="trustee-card flex flex-column gap-24 rd-16">
-              <div class="flex flex-column gap-2">
-                <h3 class="semibold color-secondary">
-                  Goodluck
-                  <span class="p16 regular">Onyeleonu</span>
-                </h3>
-                <p class="p12 regular color-primary">Product Manager</p>
-              </div>
-
-              <div class="trc-frame flex flex-column">
-                <div class="trc-photo flex">
-                  <img src="" alt="Trustee photo" />
-                </div>
-
-                <div class="trc-socials flex align-center bg-secondary rd-8">
-                  <div class="flex flex-center">
-                    <li
-                      data-lucide="twitter"
-                      class="lucide-icon"
-                      color="var(--color-white)"
-                      fill="var(--color-white)"
-                    ></li>
-                  </div>
-
-                  <div class="flex flex-center">
-                    <li
-                      data-lucide="facebook"
-                      class="lucide-icon"
-                      color="var(--color-secondary)"
-                      fill="var(--color-secondary)"
-                    ></li>
-                  </div>
-
-                  <div class="flex flex-center">
-                    <li
-                      data-lucide="linkedin"
-                      class="lucide-icon"
-                      color="var(--color-white)"
-                      fill="var(--color-white)"
-                    ></li>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div
+            id="trustees_list"
+            class="trustees-container flex flex-center gap-24"
+          >
+            <!--TRUSTEES (dynamically populated)-->
           </div>
         </section>
 
@@ -270,5 +229,6 @@
     <!--SCRIPTS-->
     <script src="https://unpkg.com/lucide@v0"></script>
     <script type="module" src="./scripts/nf-loader.js"></script>
+    <script type="module" src="./scripts/trustees.js"></script>
   </body>
 </html>

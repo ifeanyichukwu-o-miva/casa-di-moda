@@ -150,15 +150,7 @@ export const TESTIMONIALS_DATA = [
     rating: 5,
     testimony:
       "The jogger set is insanely comfortable and still looks sharp when I step out.",
-    photo_url: "./assets/testimonial-images",
-  },
-  {
-    fullname: "Aisha Bello",
-    username: "@aishabstyles",
-    rating: 5,
-    testimony:
-      "I love how the denim jacket fits perfectly and elevates my casual outfits.",
-    photo_url: "./assets/testimonial-images",
+    photo_url: "./assets/testimonial-images/img-1.jpg",
   },
   {
     fullname: "Tunde Adeyemi",
@@ -166,7 +158,7 @@ export const TESTIMONIALS_DATA = [
     rating: 4,
     testimony:
       "The hoodie and backpack combo is both stylish and super functional for daily use.",
-    photo_url: "./assets/testimonial-images",
+    photo_url: "./assets/testimonial-images/img-2.jpg",
   },
   {
     fullname: "Chioma Nwoye",
@@ -174,23 +166,7 @@ export const TESTIMONIALS_DATA = [
     rating: 5,
     testimony:
       "This pencil skirt gives me such a clean and confident look at work.",
-    photo_url: "./assets/testimonial-images",
-  },
-  {
-    fullname: "Ibrahim Musa",
-    username: "@ibrahimwears",
-    rating: 4,
-    testimony:
-      "The sleeveless cardigan is lightweight, classy, and perfect for layering.",
-    photo_url: "./assets/testimonial-images",
-  },
-  {
-    fullname: "Zainab Sadiq",
-    username: "@zainabstyle",
-    rating: 5,
-    testimony:
-      "The longline cardigan keeps me warm and stylish without feeling bulky.",
-    photo_url: "./assets/testimonial-images",
+    photo_url: "./assets/testimonial-images/img-3.jpg",
   },
   {
     fullname: "Emeka Obi",
@@ -198,7 +174,31 @@ export const TESTIMONIALS_DATA = [
     rating: 5,
     testimony:
       "That military coat makes me feel powerful every time I wear it.",
-    photo_url: "./assets/testimonial-images",
+    photo_url: "./assets/testimonial-images/img-4.jpg",
+  },
+  {
+    fullname: "Ibrahim Musa",
+    username: "@ibrahimwears",
+    rating: 4,
+    testimony:
+      "The sleeveless cardigan is lightweight, classy, and perfect for layering.",
+    photo_url: "./assets/testimonial-images/img-5.jpg",
+  },
+  {
+    fullname: "Aisha Bello",
+    username: "@aishabstyles",
+    rating: 5,
+    testimony:
+      "I love how the denim jacket fits perfectly and elevates my casual outfits.",
+    photo_url: "./assets/testimonial-images/img-6.jpg",
+  },
+  {
+    fullname: "Zainab Sadiq",
+    username: "@zainabstyle",
+    rating: 5,
+    testimony:
+      "The longline cardigan keeps me warm and stylish without feeling bulky.",
+    photo_url: "./assets/testimonial-images/img-7.jpg",
   },
   {
     fullname: "Sadiq Lawal",
@@ -206,7 +206,7 @@ export const TESTIMONIALS_DATA = [
     rating: 4,
     testimony:
       "The wristwatch looks premium and gets compliments everywhere I go.",
-    photo_url: "./assets/testimonial-images",
+    photo_url: "./assets/testimonial-images/img-8.jpg",
   },
   {
     fullname: "Ngozi Eze",
@@ -214,7 +214,7 @@ export const TESTIMONIALS_DATA = [
     rating: 5,
     testimony:
       "The leather laptop bag is durable, spacious, and looks incredibly elegant.",
-    photo_url: "./assets/testimonial-images",
+    photo_url: "./assets/testimonial-images/img-9.jpg",
   },
   {
     fullname: "Victor James",
@@ -222,6 +222,99 @@ export const TESTIMONIALS_DATA = [
     rating: 4,
     testimony:
       "These t-shirts are soft, well-fitted, and perfect for everyday wear.",
-    photo_url: "./assets/testimonial-images",
+    photo_url: "./assets/testimonial-images/img-10.jpg",
+  },
+];
+
+export const TRUSTEES_DATA = [
+  {
+    fullname: "Goodluck Onyeleonu",
+    uid: "301803771",
+    photo_url: "./assets/trustees-images/img-goodluck.png",
+    social_urls: {
+      twitter: "",
+      facebook: "",
+      linkedin: "",
+    },
+  },
+  {
+    fullname: "Princess Aret-Etta",
+    uid: "2025/A/SENG/0275",
+    photo_url: "./assets/trustees-images/img-princess.png",
+    social_urls: {
+      twitter: "",
+      facebook: "",
+      linkedin: "",
+    },
+  },
+  {
+    fullname: "Hassan Aliyu-zali",
+    uid: "2024/B/SENG/0904",
+    photo_url: "./assets/trustees-images/img-hassan.png",
+    social_urls: {
+      twitter: "",
+      facebook: "",
+      linkedin: "",
+    },
+  },
+  {
+    fullname: "Darron Ejiofor",
+    uid: "2025/A/SENG/0116",
+    photo_url: "./assets/trustees-images/img-darron.png",
+    social_urls: {
+      twitter: "",
+      facebook: "",
+      linkedin: "",
+    },
+  },
+  {
+    fullname: "Timothy Anuoluwapo",
+    uid: "2025/A/SENG/0273",
+    photo_url: "./assets/trustees-images/img-timothy.png",
+    social_urls: {
+      twitter: "",
+      facebook: "",
+      linkedin: "",
+    },
+  },
+  {
+    fullname: "Yusuf Hamza",
+    uid: "2025/A/CYB/0273",
+    photo_url: "./assets/trustees-images/img-yusuf.png",
+    social_urls: {
+      twitter: "",
+      facebook: "",
+      linkedin: "",
+    },
+  },
+  {
+    fullname: "Royal Ade-Balogun",
+    uid: "2025/A/SENG/0246",
+    photo_url: "./assets/trustees-images/img-royal.png",
+    social_urls: {
+      twitter: "",
+      facebook: "",
+      linkedin: "",
+    },
+  },
+  {
+    fullname: "Daniel Akinkunmi ",
+    uid: "2025/A/SENG/0274",
+    photo_url: "./assets/trustees-images/img-daniel.png",
+    social_urls: {
+      twitter: "",
+      facebook: "",
+      linkedin: "",
+    },
+  },
+  {
+    fullname: "Nyibiam Aondoungwa",
+    uid: "2025/A/SENG/0153",
+    photo_url: "./assets/trustees-images/img-nyibiam.png",
+    social_urls: {
+      twitter: "",
+      facebook: "",
+      linkedin: "",
+    },
   },
 ];
