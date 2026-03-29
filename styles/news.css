@@ -31,8 +31,6 @@
 
   background: rgba(54, 69, 79, 0.5);
   z-index: 1;
-
-  text-align: center;
 }
 
 .ue-overlay > div {
@@ -58,8 +56,10 @@
   }
 }
 
-.ue-overlay {
+.ue-overlay > h3,
+.ue-overlay > p{
   text-wrap-style: auto;
+  text-align: center;
 }
 
 .ue-tag-icon {
