@@ -54,7 +54,14 @@ function renderNewsList() {
   const targetElement = document.getElementById("news_list");
   targetElement.innerHTML = "";
 
-  NEWS_DATA.forEach((news) => {
+  let newsData = NEWS_DATA;
+
+  if(targetElement.classList.contains("few-list")) {
+     newsData = NEWS_DATA.slice(0, 2)
+  }
+
+
+  newsData.forEach((news) => {
     const newsCard = document.createElement("div");
     newsCard.classList.add("news-card", "rd-16");
 
