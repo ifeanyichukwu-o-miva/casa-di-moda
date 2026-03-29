@@ -160,6 +160,8 @@ button.view-more-btn {
 .news-card .overlay {
   width: 100%;
 
+  background: rgba(54, 69, 79, 0.4);
+
   padding: 24px;
 
   position: absolute;

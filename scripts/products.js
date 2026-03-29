@@ -122,15 +122,10 @@ function renderProductsList() {
   }
 
   filteredProducts.forEach((product) => {
-    const productElement = document.createElement("div");
-    productElement.classList.add(
-      "product-card",
-      "flex",
-      "flex-column",
-      "gap-16",
-    );
+    const productCard = document.createElement("div");
+    productCard.classList.add("product-card", "flex", "flex-column", "gap-16");
 
-    productElement.innerHTML = `
+    productCard.innerHTML = `
         <div class="product-thumbnail bg-gray50 rd-16" onclick="event_openProductModal(event)" data-pid="${product.id}">
             <img src="${product.photo_urls[0]}" alt="product thumbnail" />
 
@@ -181,9 +176,10 @@ function renderProductsList() {
         </button>
     `;
 
-    targetElement.appendChild(productElement);
-    loadLucideIcons();
+    targetElement.appendChild(productCard);
   });
+
+  loadLucideIcons();
 }
 
 function renderActiveProductThumbnail(uri = "") {

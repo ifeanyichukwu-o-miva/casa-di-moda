@@ -141,7 +141,89 @@ export const PRODUCTS_DATA = [
   },
 ];
 
-export const NEWS_DATA = [];
+export const NEWS_DATA = [
+  {
+    title: "The Art of Everyday Luxury",
+    category: "accessories",
+    photo_url: "./assets/news-images/img-1.jpg",
+    content: "",
+  },
+  {
+    title: "The Mystery of Identity in Fashion",
+    category: "women",
+    photo_url: "./assets/news-images/img-2.jpg",
+    content: "",
+  },
+  {
+    title: "Minimalism Meets Craftsmanship",
+    category: "women",
+    photo_url: "./assets/news-images/img-3.jpg",
+    content: "",
+  },
+  {
+    title: "Minimalism in Motion",
+    category: "accessories",
+    photo_url: "./assets/news-images/img-4.jpg",
+    content: "",
+  },
+  {
+    title: "Architecture Meets Fashion",
+    category: "men",
+    photo_url: "./assets/news-images/img-5.jpg",
+    content: "",
+  },
+  {
+    title: "In the Spotlight: Sneakers as the New Icons of Style",
+    category: "unisex",
+    photo_url: "./assets/news-images/img-6.jpg",
+    content: "",
+  },
+  {
+    title: "Confidence in Contrast: CASA DI MODA's Black-and-White Edge",
+    category: "men",
+    photo_url: "./assets/news-images/img-7.jpg",
+    content: "",
+  },
+  {
+    title: "Beyond Convention: CASA DI MODA's Ode to Avant-Garde Elegance",
+    category: "women",
+    photo_url: "./assets/news-images/img-8.jpg",
+    content: "",
+  },
+];
+
+export const EVENTS_DATA = [
+  {
+    photo_urls: [
+      "./assets/event-images/img-1.jpg",
+      "./assets/event-images/img-2.jpg",
+      "./assets/event-images/img-3.jpg",
+    ],
+    title: "The Casa di Moda Runway Experience",
+    date: "14th February, 2026",
+    location: "Lagos, Nigeria",
+  },
+  {
+    photo_urls: [
+      "./assets/event-images/img-4.jpg",
+      "./assets/event-images/img-5.jpg",
+      "./assets/event-images/img-6.jpg",
+    ],
+    title: "Threads of Prestige: A Fashion Showcase",
+    date: "1st January, 2026",
+    location: "Abuja, Nigeria",
+  },
+  {
+    photo_urls: [
+      "./assets/event-images/img-7.jpg",
+      "./assets/event-images/img-8.jpg",
+      "./assets/event-images/img-9.jpg",
+    ],
+    title: "Noir & Blanc: The Elegance Affair",
+    date: "13th October, 2025",
+    location: "Port Harcourt, Nigeria",
+  },
+];
 
 export const TESTIMONIALS_DATA = [
   {

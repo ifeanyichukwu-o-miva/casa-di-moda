@@ -18,11 +18,16 @@
         <!-- Content goes here -->
         <section class="upcoming-event flex flex-column align-center rd-16">
           <div class="ue-image bg-gray50">
-            <img src="" alt="Upcoming Event Image" />
+            <img
+              src="./assets/event-images/img-upcoming.jpg"
+              alt="Upcoming Event Image"
+            />
           </div>
 
           <div class="ue-overlay flex flex-column flex-center gap-16">
-            <h3 class="semibold color-white">The Upcoming Event Ttitle</h3>
+            <h3 class="semibold color-white">
+              Velvet Nights: The Casa di Moda Holiday Showcase
+            </h3>
 
             <p class="p16 regular color-white">Brief description</p>
 
@@ -93,42 +98,7 @@
           <div
             id="past_event_list"
             class="event-container flex align-center gap-24"
-          >
-            <div class="event-card flex flex-column gap-16">
-              <!--thumbnails-->
-              <div class="ec-thumbnail flex gap-8">
-                <div class="bg-gray50 rd-8">
-                  <img src="" alt="Event Thumbnail" />
-                </div>
-
-                <div class="ec-thumbnail-split flex flex-column gap-8">
-                  <div class="bg-gray50 rd-8">
-                    <img src="" alt="Event Thumbnail" />
-                  </div>
-                  <div class="bg-gray50 rd-8">
-                    <img src="" alt="Event Thumbnail" />
-                  </div>
-                </div>
-              </div>
-
-              <!--details-->
-              <div class="flex flex-column gap-8">
-                <h4 class="medium color-secondary">Event Title</h4>
-
-                <div class="ec-details flex align-center space-between gap-16">
-                  <div class="flex flex-column gap-4">
-                    <p class="p16 medium color-black">Date</p>
-                    <p class="p14 regular color-gray200">14th February, 2026</p>
-                  </div>
-
-                  <div class="flex flex-column gap-4">
-                    <p class="p16 medium color-black">Location</p>
-                    <p class="p14 regular color-gray200">Lagos, Nigeria</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          ></div>
         </section>
 
         <section class="flex flex-column align-center gap-32">
@@ -147,33 +117,10 @@
             </p>
           </div>
 
-          <div class="news-container flex align-center gap-24">
-            <div class="news-card rd-16">
-              <div class="news-thumbnail bg-gray50">
-                <img src="" alt="News thumbnail" />
-              </div>
-
-              <div class="overlay bg-accent flex flex-column gap-8">
-                <p class="p12 regular color-white">WOMENS NEWS</p>
-                <h4 class="medium color-white">
-                  Wrap Yourself In Elegance With The Aurora Luxe Sophistication
-                </h4>
-              </div>
-            </div>
-
-            <div class="news-card rd-16">
-              <div class="news-thumbnail bg-gray50">
-                <img src="" alt="News thumbnail" />
-              </div>
-
-              <div class="overlay bg-accent flex flex-column gap-8">
-                <p class="p12 regular color-white">WOMENS NEWS</p>
-                <h4 class="medium color-white">
-                  Wrap Yourself In Elegance With The Aurora Luxe Sophistication
-                </h4>
-              </div>
-            </div>
-          </div>
+          <div
+            id="news_list"
+            class="news-container flex align-center gap-24"
+          ></div>
         </section>
 
         <!-- End of body container -->
@@ -183,5 +130,6 @@
     <!--SCRIPTS-->
     <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module" src="./scripts/nf-loader.js"></script>
+    <script type="module" src="./scripts/news.js"></script>
   </body>
 </html>
