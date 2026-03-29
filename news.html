@@ -9,11 +9,172 @@
 
     <!--STYLES-->
     <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/news.css" />
   </head>
   <body>
     <main>
-      <div class="body-container">
+      <div class="body-container flex flex-column gap-48">
         <!-- Content goes here -->
+        <section class="upcoming-event flex flex-column align-center rd-16">
+          <div class="ue-image bg-gray50">
+            <img src="" alt="Upcoming Event Image" />
+          </div>
+
+          <div class="ue-overlay flex flex-column flex-center gap-16">
+            <h3 class="semibold color-white">The Upcoming Event Ttitle</h3>
+
+            <p class="p16 regular color-white">Brief description</p>
+
+            <div class="flex align-center space-between bg-white gap-48 rd-16">
+              <div class="flex align-center gap-24">
+                <div class="flex align-center gap-8">
+                  <div
+                    class="ue-tag-icon flex flex-center bg-primary-faded rd-8"
+                  >
+                    <i
+                      data-lucide="calendar-clock"
+                      class="lucide-icon"
+                      color="var(--color-primary)"
+                    ></i>
+                  </div>
+
+                  <div class="flex flex-column gap-4">
+                    <p class="p16 medium color-black">Date and Time</p>
+                    <p class="p14 regular color-gray200">
+                      25th December, 2025 ⋅ 04:30pm
+                    </p>
+                  </div>
+                </div>
+
+                <!---->
+
+                <div class="flex align-center gap-8">
+                  <div
+                    class="ue-tag-icon flex flex-center bg-primary-faded rd-8"
+                  >
+                    <i
+                      data-lucide="map-pin"
+                      class="lucide-icon"
+                      color="var(--color-primary)"
+                    ></i>
+                  </div>
+
+                  <div class="flex flex-column gap-4">
+                    <p class="p16 medium color-black">Location</p>
+                    <p class="p14 regular color-gray200">Abuja, Nigeria</p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="bg-primary flex flex-center p14 regular color-white rd-8"
+              >
+                Book Ticket
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="flex flex-column align-center gap-32">
+          <div class="section-header flex flex-column align-center gap-12">
+            <p class="p14 medium color-primary">PAST EVENTS</p>
+
+            <h3 class="semibold color-secondary">
+              Highlights From Our Past Events. <br />
+              Glimpse of Moments From Our Runway & Events.
+            </h3>
+
+            <p class="p14 regular color-gray200">
+              Take a look at some memorable moments from our fashion showcases,
+              special gatherings, and brand experiences.
+            </p>
+          </div>
+
+          <div
+            id="past_event_list"
+            class="event-container flex align-center gap-24"
+          >
+            <div class="event-card flex flex-column gap-16">
+              <!--thumbnails-->
+              <div class="ec-thumbnail flex gap-8">
+                <div class="bg-gray50 rd-8">
+                  <img src="" alt="Event Thumbnail" />
+                </div>
+
+                <div class="ec-thumbnail-split flex flex-column gap-8">
+                  <div class="bg-gray50 rd-8">
+                    <img src="" alt="Event Thumbnail" />
+                  </div>
+                  <div class="bg-gray50 rd-8">
+                    <img src="" alt="Event Thumbnail" />
+                  </div>
+                </div>
+              </div>
+
+              <!--details-->
+              <div class="flex flex-column gap-8">
+                <h4 class="medium color-secondary">Event Title</h4>
+
+                <div class="ec-details flex align-center space-between gap-16">
+                  <div class="flex flex-column gap-4">
+                    <p class="p16 medium color-black">Date</p>
+                    <p class="p14 regular color-gray200">14th February, 2026</p>
+                  </div>
+
+                  <div class="flex flex-column gap-4">
+                    <p class="p16 medium color-black">Location</p>
+                    <p class="p14 regular color-gray200">Lagos, Nigeria</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="flex flex-column align-center gap-32">
+          <div class="section-header flex flex-column align-center gap-12">
+            <p class="p14 medium color-primary">NEWS AND BLOGS</p>
+
+            <h3 class="semibold color-secondary">
+              News & Fashion Insights. <br />
+              Explore Stories, Trends & Inspiration.
+            </h3>
+
+            <p class="p14 regular color-gray200">
+              Dive into our world of fashion through stories, trends, and
+              inspiration. From styling tips to behind-the-scenes moments,
+              discover wha's new at Casa di Moda.
+            </p>
+          </div>
+
+          <div class="news-container flex align-center gap-24">
+            <div class="news-card rd-16">
+              <div class="news-thumbnail bg-gray50">
+                <img src="" alt="News thumbnail" />
+              </div>
+
+              <div class="overlay bg-accent flex flex-column gap-8">
+                <p class="p12 regular color-white">WOMENS NEWS</p>
+                <h4 class="medium color-white">
+                  Wrap Yourself In Elegance With The Aurora Luxe Sophistication
+                </h4>
+              </div>
+            </div>
+
+            <div class="news-card rd-16">
+              <div class="news-thumbnail bg-gray50">
+                <img src="" alt="News thumbnail" />
+              </div>
+
+              <div class="overlay bg-accent flex flex-column gap-8">
+                <p class="p12 regular color-white">WOMENS NEWS</p>
+                <h4 class="medium color-white">
+                  Wrap Yourself In Elegance With The Aurora Luxe Sophistication
+                </h4>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <!-- End of body container -->
       </div>

@@ -133,20 +133,20 @@ button.view-more-btn {
   overflow: hidden;
 }
 
-.news-card.big {
+.news-card:nth-child(odd) {
   min-width: 420px;
   width: 840px;
 }
 
-.news-card.small {
+.news-card:nth-child(even) {
   min-width: 350px;
   width: 420px;
 }
 
 @media screen and (max-width: 768px) {
   .news-card,
-  .news-card.big,
-  .news-card.small {
+  .news-card:nth-child(odd),
+  .news-card:nth-child(even) {
     width: 100%;
     min-width: 100%;
   }

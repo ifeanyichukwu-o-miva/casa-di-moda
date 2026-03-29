@@ -1,0 +1,146 @@
+.upcoming-event {
+  min-height: 450px;
+
+  justify-content: flex-end;
+
+  overflow: hidden;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .upcoming-event {
+    min-height: 540px;
+  }
+}
+
+.ue-image {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+
+  z-index: 0;
+}
+
+.ue-overlay {
+  width: 100%;
+
+  padding: 24px;
+
+  background: rgba(54, 69, 79, 0.5);
+  z-index: 1;
+}
+
+.ue-overlay > div {
+  width: 100%;
+  max-width: 720px;
+
+  padding: 16px;
+}
+
+.ue-overlay > div > button {
+  width: 180px;
+}
+
+@media screen and (max-width: 768px) {
+  .ue-overlay > div,
+  .ue-overlay > div > div {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .ue-overlay > div > button {
+    width: 100%;
+  }
+}
+
+.ue-tag-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.event-container {
+  width: 100%;
+  padding-bottom: 16px;
+
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .event-container {
+    flex-wrap: wrap;
+  }
+}
+
+.event-card {
+  min-width: 480px;
+  width: 480px;
+}
+
+@media screen and (max-width: 768px) {
+  .event-card {
+    min-width: 100%;
+    width: 100%;
+  }
+}
+
+.ec-thumbnail {
+  width: 100%;
+}
+
+.ec-thumbnail div {
+  overflow: hidden;
+}
+
+.ec-thumbnail > div:nth-child(1) {
+  flex: 1;
+}
+
+.ec-thumbnail-split > div {
+  width: 150px;
+  height: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .ec-thumbnail-split > div {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.ec-details {
+  width: 100%;
+}
+
+.ec-details > div:nth-child(2) {
+  text-align: right;
+}
+
+.news-container {
+  width: 100%;
+  max-width: 1024px;
+
+  flex-wrap: wrap;
+
+  overflow-x: hidden;
+}
+
+.news-card {
+  width: calc((100% - 2.4rem) / 2) !important;
+  min-width: calc((100% - 2.4rem) / 2) !important;
+  max-width: calc((100% - 2.4rem) / 2);
+}
+
+@media screen and (max-width: 768px) {
+  .news-card {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100%;
+  }
+}
+
+.news-card h4 {
+  text-wrap-style: auto;
+}
