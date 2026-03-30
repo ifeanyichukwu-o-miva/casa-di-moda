@@ -115,6 +115,8 @@ section.mv {
 
     padding: 16px;
     border-radius: 8px;
+
+    gap: 16px;
   }
 }
 
@@ -124,7 +126,7 @@ section.mv {
 
 .trc-photo {
   width: 100%;
-  height: 250px;
+  height: 244px;
 
   overflow: hidden;
 }
@@ -135,6 +137,10 @@ section.mv {
 }
 
 @media screen and (max-width: 768px) {
+  .trc-photo {
+    height: 178px;
+  }
+
   .trc-socials {
     height: 32px;
   }

@@ -53,6 +53,7 @@ section.search-box .search-container .search-bar .seperator {
 
 .product-categories {
   width: 100%;
+  padding: 24px;
 
   overflow: auto;
 }

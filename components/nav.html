@@ -1,4 +1,4 @@
-<nav class="flex flex-row flex-center">
+<nav class="flex flex-column flex-center">
   <!--DESKTOP/DEFAULT NAV BAR-->
   <div
     data-name="desktop"
@@ -31,9 +31,11 @@
 
     <!---->
     <div class="nav-actions flex align-center gap-8">
-      <button class="bg-primary-faded bookings-btn">
-        <p class="p14 medium color-primary">Book Appointment</p>
-      </button>
+      <a href="./about.html#contact-us">
+        <button class="bg-primary-faded bookings-btn">
+          <p class="p14 medium color-primary">Book Appointment</p>
+        </button>
+      </a>
 
       <a href="./cart.html">
         <button class="cart-btn flex flex-center">
@@ -121,8 +123,27 @@
       </li>
     </ul>
 
-    <button class="bg-primary-faded bookings-btn">
-      <p class="p14 medium color-primary">Book Appointment</p>
-    </button>
+    <a href="./about.html#contact-us">
+      <button class="bg-primary-faded bookings-btn">
+        <p class="p14 medium color-primary">Book Appointment</p>
+      </button>
+    </a>
+  </div>
+
+  <!--MARQUEE-->
+  <div class="marquee-container flex flex-center">
+    <marquee
+      behavior="scroll"
+      direction="left"
+      scrollamount="5"
+      onmouseover="this.stop()"
+      onmouseout="this.start()"
+      onclick=""
+      class="p12 regular color-white"
+    >
+      Upcoming Event: Velvet Nights: The Casa di Moda Holiday Showcase • Date:
+      25th December, 2025 • Time 04:30pm • Location: Abuja, Nigeria • Book Your
+      Ticket Now
+    </marquee>
   </div>
 </nav>

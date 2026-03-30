@@ -24,12 +24,16 @@
   z-index: 0;
 }
 
+.ue-image img {
+  object-fit: fill;
+}
+
 .ue-overlay {
   width: 100%;
 
   padding: 24px;
 
-  background: rgba(54, 69, 79, 0.8);
+  background: rgba(54, 69, 79, 0.9);
   z-index: 1;
 }
 
@@ -57,7 +61,7 @@
 }
 
 .ue-overlay > h3,
-.ue-overlay > p{
+.ue-overlay > p {
   text-wrap-style: auto;
   text-align: center;
 }

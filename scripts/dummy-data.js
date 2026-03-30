@@ -311,7 +311,7 @@ export const TESTIMONIALS_DATA = [
 export const TRUSTEES_DATA = [
   {
     fullname: "Goodluck Onyeleonu",
-    uid: "301803771",
+    uid: "Project Manager",
     photo_url: "./assets/trustees-images/img-goodluck.png",
     social_urls: {
       twitter: "",
@@ -321,7 +321,7 @@ export const TRUSTEES_DATA = [
   },
   {
     fullname: "Princess Aret-Etta",
-    uid: "2025/A/SENG/0275",
+    uid: "Graphics Designer",
     photo_url: "./assets/trustees-images/img-princess.png",
     social_urls: {
       twitter: "",
@@ -331,7 +331,7 @@ export const TRUSTEES_DATA = [
   },
   {
     fullname: "Hassan Aliyu-zali",
-    uid: "2024/B/SENG/0904",
+    uid: "Web Developer",
     photo_url: "./assets/trustees-images/img-hassan.png",
     social_urls: {
       twitter: "",
@@ -341,7 +341,7 @@ export const TRUSTEES_DATA = [
   },
   {
     fullname: "Darron Ejiofor",
-    uid: "2025/A/SENG/0116",
+    uid: "Graphics Designer",
     photo_url: "./assets/trustees-images/img-darron.png",
     social_urls: {
       twitter: "",
@@ -351,7 +351,7 @@ export const TRUSTEES_DATA = [
   },
   {
     fullname: "Timothy Anuoluwapo",
-    uid: "2025/A/SENG/0273",
+    uid: "Web Developer",
     photo_url: "./assets/trustees-images/img-timothy.png",
     social_urls: {
       twitter: "",
@@ -361,7 +361,7 @@ export const TRUSTEES_DATA = [
   },
   {
     fullname: "Yusuf Hamza",
-    uid: "2025/A/CYB/0273",
+    uid: "Graphics Designer",
     photo_url: "./assets/trustees-images/img-yusuf.png",
     social_urls: {
       twitter: "",
@@ -371,7 +371,7 @@ export const TRUSTEES_DATA = [
   },
   {
     fullname: "Royal Ade-Balogun",
-    uid: "2025/A/SENG/0246",
+    uid: "Web Developer",
     photo_url: "./assets/trustees-images/img-royal.png",
     social_urls: {
       twitter: "",
@@ -380,8 +380,8 @@ export const TRUSTEES_DATA = [
     },
   },
   {
-    fullname: "Daniel Akinkunmi ",
-    uid: "2025/A/SENG/0274",
+    fullname: "Daniel Akinkunmi",
+    uid: "UI/UX Designer",
     photo_url: "./assets/trustees-images/img-daniel.png",
     social_urls: {
       twitter: "",
@@ -391,7 +391,7 @@ export const TRUSTEES_DATA = [
   },
   {
     fullname: "Nyibiam Aondoungwa",
-    uid: "2025/A/SENG/0153",
+    uid: "Content Writer",
     photo_url: "./assets/trustees-images/img-nyibiam.png",
     social_urls: {
       twitter: "",

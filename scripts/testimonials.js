@@ -13,6 +13,29 @@ function renderTestimonialList() {
 
   //--
   TESTIMONIALS_DATA.forEach((testimony, index) => {
+    //--populate rating stars
+    let stars = "";
+    for (let i = 0; i < 5; i++) {
+      if (i < testimony.rating) {
+        stars += `
+          <i
+            data-lucide="star"
+            class="lucide-icon"
+            color="var(--color-primary)"
+            fill="var(--color-primary)"
+          ></i>
+        `;
+      } else {
+        stars += `
+          <i
+            data-lucide="star"
+            class="lucide-icon"
+            color="var(--color-primary)"
+          ></i>
+        `;
+      }
+    }
+
     const testimonialElement = document.createElement("div");
     testimonialElement.classList.add(
       "testimonial-card",
@@ -51,13 +74,7 @@ function renderTestimonialList() {
         <div class="flex flex-column gap-8">
             <p class="p16 medium color-black">${testimony.testimony}</p>
 
-            <div class="flex align-center gap-4">
-            <i
-                data-lucide="star"
-                class="lucide-icon"
-                color="var(--color-primary)"
-            ></i>
-            </div>
+            <div class="flex align-center gap-4">${stars}</div>
         </div>
     `;
 
@@ -66,6 +83,29 @@ function renderTestimonialList() {
 
   //--clone first few cards for loop effect
   TESTIMONIALS_DATA.slice(0, visibleCards).forEach((testimony) => {
+    //--populate rating stars
+    let stars = "";
+    for (let i = 0; i < 5; i++) {
+      if (i < testimony.rating) {
+        stars += `
+          <i
+            data-lucide="star"
+            class="lucide-icon"
+            color="var(--color-primary)"
+            fill="var(--color-primary)"
+          ></i>
+        `;
+      } else {
+        stars += `
+          <i
+            data-lucide="star"
+            class="lucide-icon"
+            color="var(--color-primary)"
+          ></i>
+        `;
+      }
+    }
+
     const testimonialElement = document.createElement("div");
     testimonialElement.classList.add(
       "testimonial-card",
@@ -79,37 +119,31 @@ function renderTestimonialList() {
     testimonialElement.innerHTML = `
         <div class="flex align-center space-between gap-24">
             <div class="tc-user flex align-center gap-8">
-            <div class="tc-avatar bg-gray50">
-                <img src="${testimony.photo_url}" alt="User avatar" />
-            </div>
+                <div class="tc-avatar bg-gray50">
+                    <img src="${testimony.photo_url}" alt="User avatar" />
+                </div>
 
-            <div class="flex flex-column gap-2">
-                <p class="p16 medium color-black">${testimony.fullname}</p>
+                <div class="flex flex-column gap-2">
+                    <p class="p16 medium color-black">${testimony.fullname}</p>
 
-                <p class="p14 regular color-gray200">${testimony.username}</p>
-            </div>
+                    <p class="p14 regular color-gray200">${testimony.username}</p>
+                </div>
             </div>
 
             <div class="tc-quote flex flex-center">
-            <i
-                data-lucide="quote"
-                class="lucide-icon"
-                color="var(--color-gray100)"
-                fill="var(--color-gray100)"
-            ></i>
+                <i
+                    data-lucide="quote"
+                    class="lucide-icon"
+                    color="var(--color-gray100)"
+                    fill="var(--color-gray100)"
+                ></i>
             </div>
         </div>
 
         <div class="flex flex-column gap-8">
-            <h4 class="medium color-secondary">${testimony.testimony}</h4>
+            <p class="p16 medium color-black">${testimony.testimony}</p>
 
-            <div class="flex align-center gap-4">
-            <i
-                data-lucide="star"
-                class="lucide-icon"
-                color="var(--color-primary)"
-            ></i>
-            </div>
+            <div class="flex align-center gap-4">${stars}</div>
         </div>
     `;
 

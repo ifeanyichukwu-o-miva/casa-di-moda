@@ -11,10 +11,28 @@
     padding: 16px;
 
     flex-wrap: wrap-reverse;
+    gap: 8px;
   }
 
   .hero > div {
     width: 100%;
+  }
+
+  .hero > div:nth-child(1) {
+    gap: 24px;
+  }
+
+  .hero h3,
+  .hero p {
+    text-align: center;
+  }
+
+  .hero h3 {
+    text-wrap-style: auto;
+  }
+
+  .hero h3 > br {
+    display: none;
   }
 }
 
@@ -28,8 +46,14 @@
 
 @media screen and (max-width: 768px) {
   .hero-buttons {
+    width: 100%;
     flex-wrap: wrap-reverse;
     gap: 16px;
+  }
+
+  .hero-buttons a {
+    flex: none;
+    width: 100%;
   }
 
   .hero-buttons button {
@@ -42,7 +66,8 @@
 }
 
 .hero-photo {
-  height: 320px;
+  /* height: 320px; */
+  aspect-ratio: 1/0.8;
   overflow: hidden;
 }
 
@@ -195,7 +220,7 @@ button.view-more-btn {
 .testimonials-container {
   width: 100%;
 
-  padding: 24px 0 0 48px;
+  padding: 24px 0 0 24px;
 
   transition: transform 0.5s ease;
   will-change: transform;

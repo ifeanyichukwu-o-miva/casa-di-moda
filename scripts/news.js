@@ -3,6 +3,8 @@ import { EVENTS_DATA, NEWS_DATA } from "./dummy-data.js";
 
 function renderEventsList() {
   const targetElement = document.getElementById("past_event_list");
+  if (!targetElement) return;
+
   targetElement.innerHTML = "";
 
   EVENTS_DATA.forEach((event) => {
@@ -52,14 +54,15 @@ function renderEventsList() {
 
 function renderNewsList() {
   const targetElement = document.getElementById("news_list");
+  if (!targetElement) return;
+
   targetElement.innerHTML = "";
 
   let newsData = NEWS_DATA;
 
-  if(targetElement.classList.contains("few-list")) {
-     newsData = NEWS_DATA.slice(0, 2)
+  if (targetElement.classList.contains("few-list")) {
+    newsData = NEWS_DATA.slice(0, 2);
   }
-
 
   newsData.forEach((news) => {
     const newsCard = document.createElement("div");
